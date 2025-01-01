@@ -86,14 +86,14 @@ body {
   display: flex;
   flex-flow: column nowrap;
   gap: 1.5rem;
-  width: min(calc(100% - 24px), 600px);
+  width: min(calc(100% - 1rem), 600px);
   background: var(--bg-secondary);
   margin-inline: auto;
   border-radius: 10px;
 }
 @media screen and (min-width: 23.4375em) {
   .container {
-    width: min(calc(100% - 48px), 600px);
+    width: min(calc(100% - 2rem), 600px);
   }
 }
 .perfume {
