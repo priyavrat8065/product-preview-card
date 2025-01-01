@@ -96,6 +96,9 @@ body {
     width: min(calc(100% - 48px), 600px);
   }
 }
+.perfume {
+  padding: 0 1.5rem 1.5rem;
+}
 /* IMAGE CSS */
 .container figure .perfume-mobile {
   border-top-left-radius: 10px;
