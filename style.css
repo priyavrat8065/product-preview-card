@@ -133,6 +133,9 @@ body {
   font-weight: var(--ft-weight-para);
   font-size: var(--ft-sz-para);
 }
+.perfume__description {
+  line-height: 1.5;
+}
 
 /* STYLE HEADING */
 .perfume__heading,
@@ -148,6 +151,13 @@ body {
 }
 
 /* STYLE PRICE */
+
+.perfume__price {
+  display: flex;
+  align-items: center;
+  flex-flow: row nowrap;
+  gap: 1rem;
+}
 
 .perfume__current-price {
   color: var(--bg-btn-price);
