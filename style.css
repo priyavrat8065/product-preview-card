@@ -1,5 +1,7 @@
 /* RESET CODE */
-* {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -61,10 +63,12 @@ img {
   --bg-secondary: hsl(0, 0%, 100%);
   --font-color-para: hsl(228, 12%, 48%);
   --bg-btn-price: hsl(158, 36%, 37%);
+  --bg-btn-hover: hsl(158, 36%, 20%);
   /* FONTS */
   --ff-heading: "Fraunces", serif;
   --ff-para: "Montserrat", sans-serif;
   --ft-weight-para: 500;
+  --ft-weight-btn: 700;
   --ft-sz-heading: 2rem;
   --ft-sz-para: 0.875rem;
   /* MARGIN */
@@ -166,4 +170,29 @@ body {
   text-decoration: line-through;
 }
 
-/*  */
+/* SHOPPING BUTTON */
+.perfume__shopping-btn:any-link {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 10px;
+  background-color: var(--bg-btn-price);
+  padding: 1rem 0;
+  color: var(--bg-secondary);
+  font-size: var(--ft-sz-para);
+  font-weight: var(--ft-weight-btn);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.perfume__shopping-btn:before {
+  content: url(images/icon-cart.svg);
+  display: flex;
+  align-items: center;
+}
+.perfume__shopping-btn:hover,
+.perfume__shopping-btn:focus {
+  background: var(--bg-btn-hover);
+}
