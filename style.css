@@ -10,7 +10,41 @@ img {
   height: auto;
 }
 
+/* CSS VARIABLES */
+:root {
+  /* COLORS */
+  --bg-primary: hsl(30, 38%, 92%);
+  --bg-secondary: hsl(0, 0%, 100%);
+}
+
 /* UTITLITY CLASS */
 .hidden {
   display: none;
+}
+/* GENERAL CSS */
+body {
+  min-height: 100vh;
+  background: var(--bg-primary);
+  display: flex;
+  align-items: center;
+}
+/* CONTAINER CSS */
+.container {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1.5rem;
+  width: min(calc(100% - 24px), 600px);
+  background: var(--bg-secondary);
+  margin-inline: auto;
+  border-radius: 10px;
+}
+.container figure .perfume-mobile {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+@media screen and (min-width: 23.4375em) {
+  .container {
+    width: min(calc(100% - 48px), 600px);
+  }
 }
