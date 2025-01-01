@@ -67,11 +67,28 @@ img {
   --ft-weight-para: 500;
   --ft-sz-heading: 2rem;
   --ft-sz-para: 0.875rem;
+  /* MARGIN */
+  --mb-22: 1.375rem;
+  --mb-16: 1rem;
+  --mb-30: 1.875rem;
+  --mb-18: 1.125rem;
 }
 
 /* UTITLITY CLASS */
 .hidden {
   display: none;
+}
+.mb-22 {
+  margin-bottom: var(--mb-22);
+}
+.mb-16 {
+  margin-bottom: var(--mb-16);
+}
+.mb-30 {
+  margin-bottom: var(--mb-30);
+}
+.mb-18 {
+  margin-bottom: var(--mb-18);
 }
 /* GENERAL CSS */
 body {
@@ -138,3 +155,5 @@ body {
 .perfume__original-price {
   text-decoration: line-through;
 }
+
+/*  */
