@@ -10,11 +10,58 @@ img {
   height: auto;
 }
 
+/* fraunces-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./fonts/fraunces-v31-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* fraunces-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 700;
+  src: url("./fonts/fraunces-v31-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* montserrat-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./fonts/montserrat-v29-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* montserrat-500 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  src: url("./fonts/montserrat-v29-latin-500.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* montserrat-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  src: url("./fonts/montserrat-v29-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
 /* CSS VARIABLES */
 :root {
   /* COLORS */
   --bg-primary: hsl(30, 38%, 92%);
   --bg-secondary: hsl(0, 0%, 100%);
+  /* FONTS */
+  --ff-heading: "Fraunces", serif;
+  --ff-body: "Montserrat", sans-serif;
 }
 
 /* UTITLITY CLASS */
@@ -27,6 +74,7 @@ body {
   background: var(--bg-primary);
   display: flex;
   align-items: center;
+  font-family: var(--ff-body);
 }
 /* CONTAINER CSS */
 .container {
@@ -38,13 +86,22 @@ body {
   margin-inline: auto;
   border-radius: 10px;
 }
-.container figure .perfume-mobile {
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-}
-
 @media screen and (min-width: 23.4375em) {
   .container {
     width: min(calc(100% - 48px), 600px);
   }
+}
+/* IMAGE CSS */
+.container figure .perfume-mobile {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.container figure figcaption {
+  position: absolute;
+  left: -10000px;
+}
+
+/* PERFUME HEADING */
+.perfume__heading {
+  font-family: var(--ff-heading);
 }
