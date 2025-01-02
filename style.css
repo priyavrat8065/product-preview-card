@@ -196,3 +196,26 @@ body {
 .perfume__shopping-btn:focus {
   background: var(--bg-btn-hover);
 }
+@media screen and (min-width: 39.5em) {
+  .container {
+    flex-direction: row;
+    gap: 2rem;
+  }
+  .container > * {
+    flex-basis: 100%;
+  }
+  .perfume-desktop {
+    display: block;
+    max-width: 300px;
+    height: 100%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+  .perfume-mobile {
+    display: none;
+  }
+
+  .perfume {
+    padding: 2rem 2rem 2rem 0;
+  }
+}
