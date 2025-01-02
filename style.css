@@ -107,7 +107,7 @@ body {
   gap: 1.5rem;
   width: min(calc(100% - 1rem), 600px);
   background: var(--bg-secondary);
-  margin: 8rem auto;
+  margin: 4rem auto;
   border-radius: 10px;
 }
 @media screen and (min-width: 23.4375em) {
@@ -195,6 +195,10 @@ body {
   background: var(--bg-btn-hover);
 }
 @media screen and (min-width: 36em) {
+  body {
+    display: flex;
+    align-items: center;
+  }
   .container {
     flex-direction: row;
     gap: 2rem;
